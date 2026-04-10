@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script>
+    // This forces the browser to scroll to the top-left corner on every load
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    };
+
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steps & Retaining Walls | Tactical Concrete LLC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
+        
+        nav { background: #1a1a1a; color: #fff; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #d32f2f; }
+        .logo { font-family: 'Oswald', sans-serif; letter-spacing: 2px; text-decoration: none; color: white; }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img37.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 { font-family: 'Oswald', sans-serif; font-size: 3rem; text-transform: uppercase; }
+
+        .feature-section { padding: 60px 5%; background: white; }
+        .feature-grid { display: flex; gap: 30px; flex-wrap: wrap; align-items: center; }
+        .feature-text { flex: 1; min-width: 300px; }
+        .feature-image { flex: 1; min-width: 300px; }
+        .feature-image img { width: 100%; border-radius: 4px; box-shadow: 15px 15px 0px #d32f2f; }
+
+        .gallery-section { padding: 60px 5%; }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .gallery-grid img { width: 100%; height: 300px; object-fit: cover; border-radius: 4px; transition: 0.3s; }
+        .gallery-grid img:hover { transform: translateY(-5px); }
+
+        footer { background: #111; color: white; text-align: center; padding: 40px; margin-top: 40px; }
+        .back-btn { display: inline-block; margin-top: 20px; color: #d32f2f; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="concrete.html" class="logo">TACTICAL CONCRETE LLC</a>
+        <a href="tel:4123892994" style="color: #d32f2f; text-decoration: none; font-weight: bold;">(412) 389-2994</a>
+    </nav>
+
+    <header class="hero">
+        <h1>Steps & Retaining Walls</h1>
+        <p>Engineered for strength. Built for the Irwin terrain.</p>
+    </header>
+
+    <section class="feature-section">
+        <div class="feature-grid">
+            <div class="feature-image">
+                <img src="img30.jpg" alt="Featured Wall Project">
+            </div>
+            <div class="feature-text">
+                <h2 style="font-family: 'Oswald', sans-serif; font-size: 2.3rem; margin-bottom: 15px;">Tame Your Terrain</h2>
+                <p>In Westmoreland County, a level yard is a luxury. We specialize in structural retaining walls and integrated steps that turn steep slopes into usable, beautiful outdoor spaces. Using heavy-duty segmental blocks and precision leveling, we build walls that stand the test of time.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <h2 style="text-align: center; font-family: 'Oswald', sans-serif; font-size: 2rem; margin-bottom: 30px;">Project Gallery</h2>
+        <div class="gallery-grid">
+            <img src="img31.jpg" alt="Retaining Wall Detail"> 
+            <img src="img32.jpg" alt="Concrete Steps and Wall"> 
+            <img src="img38.jpg" alt="Steps to The Porch">
+            <img src="img34.jpg" alt="Tiered Retaining Wall"> 
+            <img src="img35.jpg" alt="Finished Steps"> 
+            <img src="img36.jpg" alt="Large Block Construction"> 
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Tactical Concrete LLC</p>
+        <a href="index.html" class="back-btn">← Back to Main Page</a>
+    </footer>
+
+</body>
+</html>

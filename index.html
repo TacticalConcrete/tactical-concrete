@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tactical Concrete LLC | Irwin, PA Driveway & Patio Experts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Navigation */
+        nav {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid #d32f2f;
+        }
+
+        .logo {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+        }
+
+        .call-btn {
+            background: #d32f2f;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .call-btn:hover { background: #b71c1c; }
+
+        /* Hero - Using titlepage.jpg */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('titlepage.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            line-height: 1.1;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 18px 35px;
+            background: #d32f2f;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover { background: #b71c1c; transform: scale(1.05); }
+
+        /* Specialty Focus Section */
+        .focus-section {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 80px 5%;
+            background: white;
+            gap: 50px;
+        }
+
+        .focus-image { flex: 1; min-width: 350px; }
+        .focus-image img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 15px 15px 0px #d32f2f;
+        }
+
+        .focus-text { flex: 1; min-width: 350px; }
+        .focus-text h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+            text-transform: uppercase;
+        }
+
+        /* Services Grid */
+        #services {
+            padding: 80px 5%;
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        a.service-card {
+            background: #2a2a2a;
+            padding: 40px;
+            border: 1px solid #444;
+            transition: 0.3s;
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        a.service-card:hover { 
+            border-color: #d32f2f; 
+            background: #333; 
+            transform: translateY(-5px); 
+        }
+
+        .service-card h3 {
+            color: #d32f2f;
+            margin-bottom: 15px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+
+        /* Gallery Grid */
+        #gallery {
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            filter: grayscale(20%);
+            transition: 0.4s;
+            border-radius: 4px;
+        }
+
+        .photo-grid img:hover { filter: grayscale(0%); transform: translateY(-5px); }
+
+        /* Footer */
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            border-top: 5px solid #d32f2f;
+        }
+
+        footer h2 { font-family: 'Oswald', sans-serif; font-size: 2rem; margin-bottom: 10px; }
+
+        @media (max-width: 768px) {
+            .focus-section { flex-direction: column; text-align: center; }
+            .focus-image img { box-shadow: 10px 10px 0px #d32f2f; height: 300px; }
+        }
+    </style>
+    <script>
+        window.onbeforeunload = function () { window.scrollTo(0, 0); };
+        if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+    </script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">TACTICAL CONCRETE LLC</div>
+        <a href="tel:4123892994" class="call-btn">CALL US</a>
+    </nav>
+
+    <header>
+        <div class="hero-text">
+            <h1>Expert Driveways & Custom Patios</h1>
+            <p>High-quality concrete solutions for Westmoreland, Irwin, North Huntingdon, and beyond.</p>
+            <a href="#contact" class="cta-button">Free Estimate</a>
+        </div>
+    </header>
+
+    <section class="focus-section">
+        <div class="focus-text">
+            <h2>Custom Stamped Patios</h2>
+            <p>Transform your backyard with a premium stamped finish. From wood-plank patterns to slate and stone, we provide the aesthetic of high-end materials with the unmatched durability of reinforced concrete.</p>
+        </div>
+        <div class="focus-image">
+            <img src="job2.jpg" alt="Stamped Wood Concrete Patio">
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 style="font-family: 'Oswald', sans-serif; font-size: 2.5rem; text-transform: uppercase;">Our Core Specialties</h2>
+        <div class="service-grid">
+            <a href="driveways.html" class="service-card">
+                <h3>Custom Driveways</h3>
+                <p>Engineered for strength and curb appeal. Click to view our driveway projects.</p>
+            </a>
+
+            <a href="patios.html" class="service-card">
+                <h3>Decorative Stamping</h3>
+                <p>The look of wood or stone without the maintenance. Click to view our custom patios.</p>
+            </a>
+
+            <a href="walls.html" class="service-card">
+                <h3>Structural Hardscapes</h3>
+                <p>Heavy-duty retaining walls and steps. Click to view our structural work.</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2 style="font-family: 'Oswald', sans-serif; font-size: 2.5rem; text-transform: uppercase;">Portfolio of Work</h2>
+        <div class="photo-grid">
+            <img src="job1.jpg" alt="Driveway">
+            <img src="job2.jpg" alt="Retaining Wall">
+            <img src="job3.jpg" alt="Patio">
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Contractor</h2>
+        <p>Expert Concrete Services in Irwin & Westmoreland County</p>
+        <p style="font-size: 1.5rem; margin: 15px 0;"><strong>Phone:</strong> (412) 389-2994</p>
+        <p><strong>PA License:</strong> #PA191367</p>
+        <p class="copyright" style="margin-top: 30px; opacity: 0.7;">© 2026 Tactical Concrete LLC</p>
+    </footer>
+
+</body>
+</html>

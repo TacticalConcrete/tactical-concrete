@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script>
+    // This forces the browser to scroll to the top-left corner on every load
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    };
+
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidewalks & Patios | Tactical Concrete LLC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
+        
+        nav { background: #1a1a1a; color: #fff; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #d32f2f; }
+        .logo { font-family: 'Oswald', sans-serif; letter-spacing: 2px; text-decoration: none; color: white; }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img40.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 { font-family: 'Oswald', sans-serif; font-size: 3rem; text-transform: uppercase; }
+
+        .intro-section { padding: 60px 5%; background: white; text-align: center; }
+        .intro-container { max-width: 800px; margin: 0 auto; }
+
+        .gallery-section { padding: 40px 5% 80px; }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+        }
+        .gallery-grid img { width: 100%; height: 280px; object-fit: cover; border-radius: 4px; transition: 0.3s; }
+        .gallery-grid img:hover { transform: scale(1.02); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+        footer { background: #111; color: white; text-align: center; padding: 40px; }
+        .back-btn { display: inline-block; margin-top: 20px; color: #d32f2f; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="concrete.html" class="logo">TACTICAL CONCRETE LLC</a>
+        <a href="tel:4123892994" style="color: #d32f2f; text-decoration: none; font-weight: bold;">(412) 389-2994</a>
+    </nav>
+
+    <header class="hero">
+        <h1>Sidewalks & Patios</h1>
+        <p>Enhancing your outdoor living space with precision flatwork.</p>
+    </header>
+
+    <section class="intro-section">
+        <div class="intro-container">
+            <h2 style="font-family: 'Oswald', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Quality Underfoot</h2>
+            <p>Whether you need a simple, clean-cut sidewalk or a custom-stamped patio that mimics natural stone or wood, Tactical Concrete LLC delivers. We focus on proper sub-grade preparation and high-quality mixes to ensure your entertainment space stays beautiful for years to come.</p>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="gallery-grid">
+            <img src="img40.jpg" alt="Patio Project">
+            <img src="img41.jpg" alt="Sidewalk Project">
+            <img src="img42.jpg" alt="Stamped Concrete Detail">
+            <img src="img43.jpg" alt="Custom Patio Finish">
+            <img src="img44.jpg" alt="Concrete Walkway">
+            <img src="img45.jpg" alt="Decorative Border">
+            <img src="img46.jpg" alt="Outdoor Living Space">
+            <img src="img47.jpg" alt="Backyard Transformation">
+            <img src="img48.jpg" alt="Patio Pour">
+            <img src="img49.jpg" alt="Stamped Texture">
+            <img src="img50.jpg" alt="Finished Sidewalk">
+            <img src="img51.jpg" alt="Curved Walkway">
+            <img src="img52.jpg" alt="Large Patio Design">
+            <img src="img53.jpg" alt="Concrete Design Irwin PA">
+            <img src="img54.jpg" alt="Residential Concrete">
+            <img src="img55.jpg" alt="Tactical Concrete Project">
+            <img src="img56.jpg" alt="Stamped Wood Plank">
+            <img src="img57.jpg" alt="Ashlar Slate Stamp">
+            <img src="img58.jpg" alt="Clean Concrete Edges">
+            <img src="img59.jpg" alt="Patio with Steps">
+            <img src="img60.jpg" alt="Sidewalk Integration">
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Tactical Concrete LLC</p>
+        <a href="index.html" class="back-btn">← Back to Main Page</a>
+    </footer>
+
+</body>
+</html>
